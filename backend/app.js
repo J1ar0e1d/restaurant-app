@@ -20,6 +20,11 @@ app.get('/meals', async (req, res) => {
   res.json(JSON.parse(meals));
 });
 
+app.get('/meals/desserts', async (req, res) => {
+  const desserts = await fs.readFile('./data/available-desserts.json', 'utf8');
+  res.json(JSON.parse(desserts));
+});
+
 app.post('/orders', async (req, res) => {
   const orderData = req.body.order;
 

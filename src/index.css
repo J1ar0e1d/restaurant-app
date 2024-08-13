@@ -43,6 +43,8 @@ body {
 
 
 h1 {
+  display: flex;
+  justify-content: center;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -261,4 +263,17 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+.meals {
+  width: 90%;
+  max-width: 70rem;
+  list-style: none;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+   
 }

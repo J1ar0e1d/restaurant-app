@@ -1,6 +1,6 @@
 import useHttp from "../hooks/useHttp";
-import MealItem from "./MealItem";
-import Error from "./Error";
+import MealItem from "../components/MealItem";
+import Error from "../components/Error";
 
 const requestConfig = {}
 
@@ -16,11 +16,14 @@ const FoodList = () => {
   }
   
    return (
+    <>
+    <h1>Main Plates</h1>
     <ul id="meals">
       {readyMeals.map((meal) => (
         <MealItem key={meal.id} meal={meal} />
       ))}
     </ul>
+      </>
   );
 };
 

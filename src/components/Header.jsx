@@ -23,10 +23,8 @@ const Header = () => {
 
    <div id="title">
         <img src={logo} alt='picture of a restaurant logo'/>
-        <h1>AllUKenEat</h1>
+        <h1>Ramon & Jose Tapas</h1>
     </div>
-          {/* <p className='main-header-item'>Desserts</p>
-          <p className='main-header-item'>Main Dishes</p> */}
         <nav>
             <Button textOnly onClick={handleShowCart}>Cart ({totalCartItems})</Button>
         </nav>
